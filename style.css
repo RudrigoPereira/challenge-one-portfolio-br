@@ -70,12 +70,18 @@ header{
 /*Sessão Title*/
 
 section.title{
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .title__profile {
     width: 98px;
     height: 98px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title__container {
+    text-align: justify;
 }
 
 .title__bio {
