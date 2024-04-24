@@ -8,6 +8,7 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
    --cor-primaria: #464646;
+   --cor-about-bg: #EAF2FD;
 }
 
 body {
@@ -71,6 +72,7 @@ header{
 
 section.title{
     padding: 1rem;
+    text-align: justify;
 }
 
 .title__profile {
@@ -80,31 +82,22 @@ section.title{
     object-fit: cover;
 }
 
-.title__container {
-    text-align: justify;
-}
-
-.title__bio {
-    font-size: 22px;
-}
-
-.title__subsection {
-    font-size: 14px;
-    font-weight: lighter;
-}
-
 .title__network {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    font-weight: 400;
     padding: 0;
 }
 
 /*Sessão About*/
 
 section.about{
+    background-color: var(--cor-about-bg);
+    padding: 1rem;
+    text-align: justify;
+}
 
+.about__title {
+    margin: 0;
 }
 
 /*Sessão Hobbies*/
