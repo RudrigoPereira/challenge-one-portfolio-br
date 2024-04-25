@@ -100,10 +100,84 @@ section.about{
     margin: 0;
 }
 
+/*Sessão Skills*/
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: center;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills__box {
+    display: flex;
+    width: 156px;
+    height: 118px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.skills__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    gap: 8px;
+    font-weight: bold;
+}
+
 /*Sessão Hobbies*/
 
 section.hobbies{
-    
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.hobbies__title {
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.hobbies__box {
+    display: flex;
+    width: 156px;
+    height: 118px;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.hobbies__box ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.hobbies__name {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 /* Experiência Acadêmica*/
