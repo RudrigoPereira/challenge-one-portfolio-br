@@ -9,6 +9,7 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
    --cor-primaria: #464646;
    --cor-about-bg: #EAF2FD;
+   --cor-botao: #2A7AE4;
 }
 
 body {
@@ -199,7 +200,6 @@ section.academic{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .academic__courses__box {
@@ -222,7 +222,53 @@ section.academic{
 /* experiência*/
 
 section.experience{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
 
+.experience__section__title {
+    display: flex;
+    justify-content: center;
+}
+
+.experiencie__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.experience__img {
+    display: flex;
+    width: 100%;
+}
+
+.experience__description {
+    display: flex;
+    gap: 1rem;
+}
+
+.experiencia__botao__repo {
+    padding: 0.75rem;
+    color: var(--cor-botao);
+    background-color: transparent;
+    border-color: var(--cor-botao);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.experiencia__botao__demo {
+    padding: 0.75rem;
+    color: white;
+    background-color: var(--cor-botao);
+    border-color: var(--cor-botao);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.experiencia__botao__repo:disabled {
+    color: gray;
+    border-color: gray;
 }
 
 /*Contato*/
