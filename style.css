@@ -188,7 +188,7 @@ section.academic{
     display: flex;
     flex-direction: column;
     background-color: var(--cor-about-bg);
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .academic__title {
@@ -199,7 +199,6 @@ section.academic{
 .academic__courses {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 
 .academic__courses__box {
@@ -224,7 +223,7 @@ section.academic{
 section.experience{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 .experience__section__title {
@@ -232,10 +231,14 @@ section.experience{
     justify-content: center;
 }
 
-.experiencie__box {
+.experience__section__box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+.experiencie__box {
+    margin: 1rem 0;
 }
 
 .experience__img {
@@ -274,13 +277,123 @@ section.experience{
 /*Contato*/
 
 section.formcontato{
+    display: flex;
+    background-color: var(--cor-about-bg);
+    padding: 1rem 2rem;
+}
 
+.formcontato__esquerda {
+    display: none;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__subtext {
+    margin: 0;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.formcontato__input__box {
+    display: flex;
+    flex-direction: column; 
+}
+
+.formcontato__input {
+    color: var(--cor-primaria);
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    box-shadow: 0px 2px lightgray;
+}
+
+.formcontato__label {
+    color: gray;
+    position: absolute;
+    padding: 35px 15px;
+    transition: 0.3s;
+}
+
+.formcontato__input:focus {
+    outline: none;
+    box-shadow: 0px 3px var(--cor-botao);
+    padding: 0 15px;
+    padding-top: 30px;
+}
+
+.formcontato__textarea:focus {
+    padding: 0 15px;
+    padding-top: 40px;
+}
+
+.formcontato__input:focus ~ label,
+.formcontato__textarea:focus ~ label {
+    transform: translateY(-20px);
+    color: var(--cor-botao);
+    font-size: 0.8rem;
+}
+
+.formcontato__input:valid {
+    padding: 30px 0 0 15px;
+}
+
+.formcontato__textarea:valid {
+    padding: 40px 0 0 15px;
+}
+
+.formcontato__input:valid ~ label,
+.formcontato__textarea:valid ~label {
+    transform: translateY(-20px);
+    font-size: 0.8rem;
+}
+
+.formcontato__textarea {
+    height: 133px;
+    border-radius: 4px;
+    border: none;
+    padding: 25px 15px;
+    font-size: 1rem;
+    box-shadow: 0px 2px lightgray;
+    resize: none;
+}
+
+.formcontato__textarea:focus {
+    outline: none;
+    box-shadow: 0px 3px var(--cor-botao);
+}
+
+.formcontato__botao {
+    display: flex;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--cor-botao);
+    border-color: var(--cor-botao);
+    border-style: solid;
+    border-width: 1px;
+    width: fit-content;
 }
 
 /*footeer*/
 
 section.footer{
-   
+    display: flex;
+    justify-content: center;  
+}
+
+.footer__rodape p{
+    display: flex;
+    justify-content: center;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 

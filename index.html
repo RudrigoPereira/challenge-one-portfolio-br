@@ -204,40 +204,41 @@
     <!-- Sessão de Experiência Profissional/Projetos-->
     <section class="experience">
         <h2 class="experience__section__title" id="projetos">Projetos</h2>
+        <div class="experience__section__box">
+            <div class="experiencie__box">
+                <!-- Insira a logo/captura de seu projeto/trabalho -->
+                <img class="experience__img" src="assets/ploc.jpeg">
+                <div class="experience__info">
+                    <h3 class="experience__title">Ploc</h3>
+                    <p class="experience__text">Ploc é um puzzle de plataforma frenético e desafiador, meu primeiro projeto de jogo comercial, feito no GameMaker e que foi publicado na Steam em fevereiro de 2022.</p>
+                    <div class="experience__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <span class="experience__repo"><a href="https://github.com/RudrigoPereira" target="_blank"><button class="experiencia__botao__repo" disabled>Repositório</button></a></span>
+                        <span class="experience__demo"><a href="https://store.steampowered.com/app/1891840/Ploc/" target="_blank"><button class="experiencia__botao__demo">Jogo na Steam</button></a></span>
+                    </div>
+                </div>
+            </div>    
 
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/ploc.jpeg">
-            <div class="experience__info">
-                <h3 class="experience__title">Ploc</h3>
-                <p class="experience__text">Ploc é um puzzle de plataforma frenético e desafiador, meu primeiro projeto de jogo comercial, feito no GameMaker e que foi publicado na Steam em fevereiro de 2022.</p>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/RudrigoPereira" target="_blank"><button class="experiencia__botao__repo" disabled>Repositório</button></a></span>
-                    <span class="experience__demo"><a href="https://store.steampowered.com/app/1891840/Ploc/" target="_blank"><button class="experiencia__botao__demo">Jogo na Steam</button></a></span>
+            <div class="experiencie__box">
+                <!-- Insira a logo/captura de seu projeto/trabalho -->
+                <img class="experience__img" src="assets/decodificador.png">
+                <div class="experience__info">
+                    <h3 class="experience__title">Decodificador de texto</h3>
+                    <p class="experience__text">Challenge Alura Codificador </p>
+                    <div class="experience__description">
+                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
+                        <span class="experience__repo"><a href="https://github.com/RudrigoPereira/decodificador-de-texto-alura-one" target="_blank"><button class="experiencia__botao__repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a href="https://rudrigopereira.github.io/decodificador-de-texto-alura-one/" target="_blank"><button class="experiencia__botao__demo">Ver projeto</button></a></span>
+                    </div>
                 </div>
             </div>
-        </div>    
-
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="assets/decodificador.png">
-            <div class="experience__info">
-                <h3 class="experience__title">Decodificador de texto</h3>
-                <p class="experience__text">Challenge Alura Codificador </p>
-                <div class="experience__description">
-                    <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/RudrigoPereira/decodificador-de-texto-alura-one" target="_blank"><button class="experiencia__botao__repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href="https://rudrigopereira.github.io/decodificador-de-texto-alura-one/" target="_blank"><button class="experiencia__botao__demo">Ver projeto</button></a></span>
-                </div>
-            </div>
-        </div> 
+        </div>
     </div>
 
     <!-- Sessão de Contato -->
     <section class="formcontato">
         <div id="contato" class="formcontato__contacto">
-            <div class="formcontato--esquerda">
+            <div class="formcontato__esquerda">
                 <img class="formcontato__img" src="assets\contact_image.png">
             </div>
             <div class="formcontato__text">
@@ -245,10 +246,22 @@
                 <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                 <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                 <form class="formcontato__form">
-                    <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                    <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                    <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                    <div class="formcontato__input__box">
+                        <input class="formcontato__input" type="text" id="nome" required>
+                        <label class="formcontato__label">Nome</label>
+                    </div>
+                    <div class="formcontato__input__box">
+                        <input class="formcontato__input" type="email" id="email" required>
+                        <label class="formcontato__label">Email</label>
+                    </div>
+                    <div class="formcontato__input__box">
+                        <input class="formcontato__input" type="text" id="assunto" required>
+                        <label class="formcontato__label">Assunto</label>
+                    </div>
+                    <div class="formcontato__input__box">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" required></textarea>
+                        <label class="formcontato__label">Sua mensagem</label>
+                    </div>
                     <button class="formcontato__botao">Enviar mensagem</button>
                 </form>
             </div>
@@ -258,8 +271,8 @@
     <!-- Sessão de Footer/Rodapé-->
     <section class="footer">
         <div class="footer__rodape">
-            <p>Desenvolvido por Fulana de Tal</p>
-            <p>2022</p>
+            <p>Desenvolvido por Rodrigo Ferreira Pereira</p>
+            <p>2024</p>
         </div>
     </section>
 
