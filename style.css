@@ -73,7 +73,6 @@ header{
 
 section.title{
     padding: 1rem;
-    text-align: justify;
 }
 
 .title__profile {
@@ -94,7 +93,6 @@ section.title{
 section.about{
     background-color: var(--cor-about-bg);
     padding: 1rem;
-    text-align: justify;
 }
 
 .about__title {
@@ -309,7 +307,7 @@ section.formcontato{
 
 .formcontato__input {
     color: var(--cor-primaria);
-    height: 56px;
+    height: calc(56px - 15px);
     border-radius: 4px;
     border: none;
     padding: 15px;
@@ -319,8 +317,10 @@ section.formcontato{
 
 .formcontato__label {
     color: gray;
-    position: absolute;
-    padding: 35px 15px;
+    position: relative;
+    left: 15px;
+    top: -45px;
+    width: fit-content;
     transition: 0.3s;
 }
 
@@ -331,24 +331,15 @@ section.formcontato{
     padding-top: 30px;
 }
 
-.formcontato__textarea:focus {
-    padding: 0 15px;
-    padding-top: 40px;
-}
-
 .formcontato__input:focus ~ label,
 .formcontato__textarea:focus ~ label {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
     color: var(--cor-botao);
     font-size: 0.8rem;
 }
 
 .formcontato__input:valid {
     padding: 30px 0 0 15px;
-}
-
-.formcontato__textarea:valid {
-    padding: 40px 0 0 15px;
 }
 
 .formcontato__input:valid ~ label,
@@ -358,11 +349,11 @@ section.formcontato{
 }
 
 .formcontato__textarea {
-    height: 133px;
+    height: cal(133px - 55px);
+    width: calc(100% - 2rem);
+    padding: 40px 15px 15px 15px;
     border-radius: 4px;
     border: none;
-    padding: 25px 15px;
-    font-size: 1rem;
     box-shadow: 0px 2px lightgray;
     resize: none;
 }
@@ -370,6 +361,15 @@ section.formcontato{
 .formcontato__textarea:focus {
     outline: none;
     box-shadow: 0px 3px var(--cor-botao);
+}
+
+.formcontato__label__textarea {
+    color: gray;
+    position: relative;
+    left: 15px;
+    top: -105px;
+    width: fit-content;
+    transition: 0.3s;
 }
 
 .formcontato__botao {
