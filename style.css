@@ -49,7 +49,7 @@ section.menu{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    font-size: 0.80rem;
+    font-size: 0.70rem;
 }
 
 header{
@@ -63,6 +63,7 @@ header{
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
+    background-color: darkgray;
 }
 
 .menu__list {
@@ -197,6 +198,7 @@ section.academic{
 .academic__courses {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .academic__courses__box {
@@ -214,7 +216,15 @@ section.academic{
     padding: 5rem 0;
     background-color: white;
     justify-content: center;
-} 
+}
+
+.academic__courses__item__title h4 {
+    margin: 1rem 0;
+}
+
+.academic__courses__item__subtitle p {
+    margin: 0;
+}
 
 /* experiência*/
 
@@ -275,7 +285,6 @@ section.experience{
 /*Contato*/
 
 section.formcontato{
-    display: flex;
     background-color: var(--cor-about-bg);
     padding: 1rem 2rem;
 }
@@ -307,10 +316,10 @@ section.formcontato{
 
 .formcontato__input {
     color: var(--cor-primaria);
-    height: calc(56px - 15px);
+    height: calc(56px - 1rem);
     border-radius: 4px;
     border: none;
-    padding: 15px;
+    padding: 1rem;
     font-size: 1rem;
     box-shadow: 0px 2px lightgray;
 }
@@ -318,8 +327,8 @@ section.formcontato{
 .formcontato__label {
     color: gray;
     position: relative;
-    left: 15px;
-    top: -45px;
+    left: 1rem;
+    top: -2.8rem;
     width: fit-content;
     transition: 0.3s;
 }
@@ -327,31 +336,30 @@ section.formcontato{
 .formcontato__input:focus {
     outline: none;
     box-shadow: 0px 3px var(--cor-botao);
-    padding: 0 15px;
-    padding-top: 30px;
+    padding: 0 1rem;
+    padding-top: 2rem;
 }
 
 .formcontato__input:focus ~ label,
 .formcontato__textarea:focus ~ label {
-    transform: translateY(-15px);
+    transform: translateY(-1rem);
     color: var(--cor-botao);
     font-size: 0.8rem;
 }
 
 .formcontato__input:valid {
-    padding: 30px 0 0 15px;
+    padding: 2rem 0 0 1rem;
 }
 
 .formcontato__input:valid ~ label,
 .formcontato__textarea:valid ~label {
-    transform: translateY(-20px);
+    transform: translateY(-1rem);
     font-size: 0.8rem;
 }
 
 .formcontato__textarea {
-    height: cal(133px - 55px);
-    width: calc(100% - 2rem);
-    padding: 40px 15px 15px 15px;
+    height: cal(133px - 3.5rem);
+    padding: 2.5rem 1rem 1rem 1rem;
     border-radius: 4px;
     border: none;
     box-shadow: 0px 2px lightgray;
@@ -366,8 +374,8 @@ section.formcontato{
 .formcontato__label__textarea {
     color: gray;
     position: relative;
-    left: 15px;
-    top: -105px;
+    left: 1rem;
+    top: -6.5rem;
     width: fit-content;
     transition: 0.3s;
 }
@@ -388,32 +396,98 @@ section.formcontato{
 
 section.footer{
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    padding: 2rem; 
 }
 
 .footer__rodape p{
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (min-width: 481px) {
 
-/* Menu */
+    /* Menu */
+    section.menu {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
 
-/*title*/
+    .menu__list__item__contato {
+        font-weight: bold;
+    }
 
-/*Skills*/
+    /*title*/
+    section.title{
+        padding: 2rem;
+    }
 
-/*Hobbies*/
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        align-items: center;
+    }
 
-/*Experiências acadêmicas*/
+    .title__profile {
+        width: 146px;
+        height: 146px;
+    }
 
-/*Expeirência profissional*/
+    /*Sessão About*/
+    section.about{
+        padding: 2rem;
+    }
 
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about__paragraph {
+        margin: 0;
+    }
+
+    /*Skills*/
+    section.skills{
+        padding: 1rem 2rem;
+    }
+
+    .skills__line {
+        gap: 2rem 1rem;
+    }
+
+    .skills__box {
+        width: 200px;
+    }
+
+    /*Hobbies*/
+    section.hobbies{
+        padding: 1rem 2rem;
+    }
+
+    .hobbies__line {
+        gap: 2rem 1rem;
+    }
+
+    .hobbies__box {
+        width: 200px;
+    }
+
+    /*Experiências acadêmicas*/
+    .academic__courses {
+        gap: 2rem;
+    }
+
+    /*Experiência profissional*/
+
+    /*Contato*/
 }
 
 /*Desktop*/
