@@ -6,10 +6,12 @@ coloque nas sessões indicadas*/
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
+   --cor-de-fundo-secundaria: #EAF2FD;
    --cor-de-link: #000;
    --cor-primaria: #464646;
-   --cor-about-bg: #EAF2FD;
    --cor-botao: #2A7AE4;
+   --cor-botao-hover: #5595E9;
+   --cor-botao-hover-secundaria: #D4E4FA;
 }
 
 body {
@@ -74,6 +76,7 @@ header{
 
 section.title{
     padding: 1rem;
+    text-align: justify;
 }
 
 .title__profile {
@@ -92,8 +95,9 @@ section.title{
 /*Sessão About*/
 
 section.about{
-    background-color: var(--cor-about-bg);
+    background-color: var(--cor-de-fundo-secundaria);
     padding: 1rem;
+    text-align: justify;
 }
 
 .about__title {
@@ -186,7 +190,7 @@ section.hobbies{
 section.academic{
     display: flex;
     flex-direction: column;
-    background-color: var(--cor-about-bg);
+    background-color: var(--cor-de-fundo-secundaria);
     padding: 1rem 2rem;
 }
 
@@ -232,6 +236,7 @@ section.experience{
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
+    text-align: justify;
 }
 
 .experience__section__title {
@@ -268,6 +273,15 @@ section.experience{
     border-width: 1px;
 }
 
+.experiencia__botao__repo:disabled {
+    color: silver;
+    border-color: silver;
+}
+
+.experiencia__botao__repo:not([disabled]):hover {
+    background-color: var(--cor-botao-hover-secundaria);
+}
+
 .experiencia__botao__demo {
     padding: 0.75rem;
     color: white;
@@ -275,17 +289,22 @@ section.experience{
     border-color: var(--cor-botao);
     border-style: solid;
     border-width: 1px;
+    cursor: pointer;
 }
 
-.experiencia__botao__repo:disabled {
-    color: gray;
-    border-color: gray;
+.experiencia__botao__demo:not([disabled]):hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.experiencia__botao__demo:disabled {
+    color: silver;
+    border-color: silver;
 }
 
 /*Contato*/
 
 section.formcontato{
-    background-color: var(--cor-about-bg);
+    background-color: var(--cor-de-fundo-secundaria);
     padding: 1rem 2rem;
 }
 
@@ -344,7 +363,7 @@ section.formcontato{
 .formcontato__textarea:focus ~ label {
     transform: translateY(-1rem);
     color: var(--cor-botao);
-    font-size: 0.8rem;
+    /* font-size: 0.9rem; */
 }
 
 .formcontato__input:valid {
@@ -354,7 +373,7 @@ section.formcontato{
 .formcontato__input:valid ~ label,
 .formcontato__textarea:valid ~label {
     transform: translateY(-1rem);
-    font-size: 0.8rem;
+    /* font-size: 0.9rem; */
 }
 
 .formcontato__textarea {
@@ -390,6 +409,11 @@ section.formcontato{
     border-style: solid;
     border-width: 1px;
     width: fit-content;
+    cursor: pointer;
+}
+
+.formcontato__botao:hover {
+    background-color: var(--cor-botao-hover);
 }
 
 /*footeer*/
@@ -410,7 +434,7 @@ section.footer{
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 481px) {
+@media (min-width: 480px) {
 
     /* Menu */
     section.menu {
@@ -493,22 +517,158 @@ utilize como referência os breakpoints @media abaixo*/
 /*Desktop*/
 @media (min-width: 1024px) {
 
-/*Menu*/
+    /*Menu*/
+    section.menu {
+        padding: 1rem 6rem;
+        font-size: 1rem;
+    }
 
-/*Titulo*/
+    .menu__list {
+        display: flex;
+        gap: 2rem;
+    }
 
-/*Sessão sobre*/
+    .menu__list__item__contato {
+        display: none;
+    }
 
-/*Skills*/
+    .contato {
+        font-weight: bold;
+    }
 
-/*Hobbies*/
+    /*Titulo*/
+    section.title{
+        padding: 2.5rem 6rem;
+    }
+
+    .title__div {
+        gap: 2rem;
+    }
+
+    .title__profile {
+        width: 368px;
+        height: 368px;
+    }
+
+    .title__bio {
+        font-size: 2.5rem;
+    }
+
+    .title__subsection {
+        font-size: 1.3rem;
+    }
+
+    .title__network {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    /*Sessão sobre*/
+    section.about{
+        padding: 4rem 6rem;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    /*Skills*/
+    section.skills{
+        padding: 2.5rem 6rem;
+    }
+
+    .skills__title {
+        font-size: 2rem;
+    }
+
+    .skills__box {
+        width: 150px;
+        height: 150px;
+    }
+
+    /*Hobbies*/
+    section.hobbies{
+        padding: 2.5rem 6rem;
+    }
+
+    .hobbies__title {
+        font-size: 2rem;
+    }
+
+    .hobbies__box {
+        width: 150px;
+        height: 150px;
+    }
  
-/*Formação Acadêmica*/
+    /*Formação Acadêmica*/
+    section.academic {
+        padding: 2.5rem 6rem;
+    }
 
-/*Experiência Profissional*/
+    .academic__title {
+        font-size: 2rem;
+    }
 
- /*Contato*/
+    .academic__courses__item__img {
+        /* width: 368px; */
+        height: 100px;
+    }
 
-/*Footer*/
+    /*Experiência Profissional*/
+    section.experience{
+        padding: 2.5rem 6rem;
+    }
+
+    .experience__section__title {
+        font-size: 2rem;
+    }
+
+    .experiencie__box {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .experiencie__box:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .experience__img {
+        width: 50vw;
+    }
+
+    /*Contato*/
+    section.formcontato {
+        padding: 4rem 6rem;
+    }
+
+    .formcontato__contato {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+
+    .formcontato__esquerda {
+        display: flex;
+        align-items: center;
+    }
+
+    .formcontato__img {
+        display: flex;
+        border-radius: 50px;
+        border: 2px solid var(--cor-primaria);
+    }
+
+    .formcontato__title {
+        font-size: 2rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .formcontato__form {
+        margin: 2rem 0 0 0;
+    }
+
+    /*Footer*/
 
 }
