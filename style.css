@@ -277,7 +277,7 @@ section.experience{
 .experiencia__botao__repo:disabled {
     color: silver;
     border-color: silver;
-    cursor: default;
+    cursor: not-allowed;
 }
 
 .experiencia__botao__repo:not([disabled]):hover {
@@ -301,7 +301,7 @@ section.experience{
 .experiencia__botao__demo:disabled {
     background-color: silver;
     border-color: silver;
-    cursor: default;
+    cursor: not-allowed;
 }
 
 /*Contato*/
@@ -366,7 +366,6 @@ section.formcontato{
 .formcontato__textarea:focus ~ label {
     transform: translateY(-1rem);
     color: var(--cor-botao);
-    /* font-size: 0.9rem; */
 }
 
 .formcontato__input:valid {
@@ -376,7 +375,6 @@ section.formcontato{
 .formcontato__input:valid ~ label,
 .formcontato__textarea:valid ~label {
     transform: translateY(-1rem);
-    /* font-size: 0.9rem; */
 }
 
 .formcontato__textarea {
@@ -437,7 +435,7 @@ section.footer{
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
-@media (min-width: 480px) {
+@media (min-width: 600px) {
 
     /* Menu */
     section.menu {

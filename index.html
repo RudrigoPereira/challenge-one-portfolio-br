@@ -361,24 +361,25 @@
                 <h2 class="formcontato__title">Contato</h2>
                 <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                 <h3 class="formcontato__subtext">Preencha o formulário abaixo e entrarei em contato o mais rápido possível. </h3>
-                <form class="formcontato__form">
+                <form class="formcontato__form" method="POST" action="https://formbold.com/s/9k7rO" target="_blank">
+                <!-- <form action="https://formsubmit.co/rudrigopereira@gmail.com" method="POST" class="formcontato__form" target="_blank"> -->
                     <div class="formcontato__input__box">
-                        <input class="formcontato__input" type="text" id="nome" required>
+                        <input class="formcontato__input" type="text" name="nome" id="nome" required>
                         <label class="formcontato__label">Nome</label>
                     </div>
                     <div class="formcontato__input__box">
-                        <input class="formcontato__input" type="email" id="email" required>
+                        <input class="formcontato__input" type="email" name="email" id="email" required>
                         <label class="formcontato__label">Email</label>
                     </div>
                     <div class="formcontato__input__box">
-                        <input class="formcontato__input" type="text" id="assunto" required>
+                        <input class="formcontato__input" type="text" name="assunto" id="assunto" required>
                         <label class="formcontato__label">Assunto</label>
                     </div>
                     <div class="formcontato__input__box">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" required></textarea>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" name="mensagem" id="mensagem" required></textarea>
                         <label class="formcontato__label__textarea">Mensagem</label>
                     </div>
-                    <button class="formcontato__botao">Enviar mensagem</button>
+                    <button class="formcontato__botao" type="submit">Enviar mensagem</button>
                 </form>
             </div>
         </div>
