@@ -20,9 +20,9 @@ Este portfólio foi desenvolvido no challenge do projeto Oracle ONE | Front End 
 - CSS3
 - JavaScript
 
-<!-- ## Como Visualizar
+## Como Visualizar
 
-Você pode visualizar meu portfólio [aqui](URL_DO_SEU_PORTFOLIO). -->
+Você pode visualizar meu portfólio [aqui](https://portfolio-rfp.vercel.app).
 
 ## Autor
 
