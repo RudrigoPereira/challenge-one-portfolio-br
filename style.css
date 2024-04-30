@@ -413,8 +413,19 @@ section.formcontato{
     cursor: pointer;
 }
 
-.formcontato__botao:hover {
+.formcontato__botao:not([disabled]):hover {
     background-color: var(--cor-botao-hover);
+}
+
+.formcontato__botao:disabled {
+    background-color: silver;
+    border-color: silver;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin: 10px 0 0 0;
 }
 
 /*footeer*/
