@@ -395,7 +395,7 @@ section.formcontato{
     color: gray;
     position: relative;
     left: 1rem;
-    top: -6.5rem;
+    top: -6rem;
     width: fit-content;
     transition: 0.3s;
 }
