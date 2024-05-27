@@ -207,12 +207,13 @@ section.academic{
 
 .academic__courses__box {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
 }
 
 .academic__courses__list {
     padding: 0;
     width: 100%;
+    min-width: 325px;
 }
 
 .academic__courses__item__img {
@@ -395,7 +396,7 @@ section.formcontato{
     color: gray;
     position: relative;
     left: 1rem;
-    top: -6rem;
+    top: -6.5rem;
     width: fit-content;
     transition: 0.3s;
 }
