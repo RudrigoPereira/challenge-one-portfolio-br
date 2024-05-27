@@ -213,7 +213,7 @@ section.academic{
 .academic__courses__list {
     padding: 0;
     width: 100%;
-    min-width: 325px;
+    min-width: 250px;
 }
 
 .academic__courses__item__img {
