@@ -27,7 +27,7 @@ function validateForm() {
     }
 
     if (!isValid) {
-        messageError.textContent = "Preencha todos os campos para habitar o botão";
+        messageError.textContent = "Preencha todos os campos para habilitar o botão";
     }
 
     submitBtn.disabled = !isValid;
